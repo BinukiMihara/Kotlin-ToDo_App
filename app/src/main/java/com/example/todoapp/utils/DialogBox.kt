@@ -20,8 +20,8 @@ class DialogBox {
     fun editDialog(context: Context, note: ToDoModel) {
 
         val dialog = MaterialAlertDialogBuilder(context)
-        dialog.setTitle("Edit")
-        dialog.setMessage("Do you want to update?")
+        dialog.setTitle("Update")
+        dialog.setMessage("Do you want to update the task?")
         dialog.setIcon(R.drawable.ic_baseline_edit_24)
 
         Log.d(TAG, note.id.toString())
@@ -55,7 +55,7 @@ class DialogBox {
 
         val dialog = MaterialAlertDialogBuilder(context)
         dialog.setTitle("Delete")
-        dialog.setMessage("Do you really want to delete?")
+        dialog.setMessage("Do you sure to delete the task?")
         dialog.setIcon(R.drawable.ic_baseline_delete_forever_24)
 
         dialog.setPositiveButton("Delete") { _, _ ->
